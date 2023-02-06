@@ -12,12 +12,13 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
-    width :  100%;
-    height: 100vh;
-    background-image: url(images/bakground\ image\ new\ .jpg) ;
-    background-size: cover;
-    background-position:center;
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+
 }
 .container
 {
@@ -335,11 +336,23 @@ nav .fa-solid {
 nav .fa-regular{
     display: none;
 }
+@media (min-aspect-ratio: 16/9)
+{
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9)
+{
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
 @media only screen and (max-width: 600px)
 {
-  #header{
-    background-image: url(images/bakground\ image\ new\ phone.jpg) ;
-  }
+ 
   .header-text{
     margin-top: 100%;
     font-size: 16px;
