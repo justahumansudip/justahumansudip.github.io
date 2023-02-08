@@ -31,9 +31,23 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 140px;
+@font-face {
+    font-family: "flix";
+    src: url(Flix-Normal.ttf);
+    font-family: "mom";
+    src: url(MomcakeBold.otf);
+}
+.logo{ 
+    font-family: 'mom';
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 1;
+    color: #fff;
 
+}
+.logo span{
+    font-family: 'mom';
+    color: #ff004f;
 }
 nav ul li{
     display: inline-block;
